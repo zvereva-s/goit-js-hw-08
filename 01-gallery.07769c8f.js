@@ -6,4 +6,4 @@ var t=arguments[3];function e(t){return(e="function"==typeof Symbol&&"symbol"==t
 },{}],"TfQ5":[function(require,module,exports) {
 "use strict";var e=require("./gallery-items"),a=l(require("simplelightbox"));function l(e){return e&&e.__esModule?e:{default:e}}const t=document.querySelector(".gallery");function i(e){const a=e.map(({description:e,preview:a,original:l})=>`\n    <div class="gallery__item"><a class="gallery__item" href="${l}"><img class="gallery__image" src="${a}" alt="${e}" loading='lazy'/></a></div>`).join("\n");t.insertAdjacentHTML("beforeend",a)}i(e.galleryItems);let r=new a.default(".gallery a",{captionsData:"alt",captionPosition:"bottom",captionDelay:250});
 },{"./gallery-items":"q5Rn","simplelightbox":"yx6k"}]},{},["TfQ5"], null)
-//# sourceMappingURL=/goit-js-hm-08/01-gallery.07769c8f.js.map
+//# sourceMappingURL=/goit-js-hw-08/01-gallery.07769c8f.js.map
