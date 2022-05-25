@@ -1,22 +1,22 @@
 {
-  "name": "goit-js-hm-08",
+  "name": "goit-js-hw-08",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://zvereva-s.github.io/goit-js-hm-08/",
+  "homepage": "https://zvereva-s.github.io/goit-js-hw-08/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hm-08/"
+    "build": "parcel build src/*.html --public-url /goit-js-hw-08/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zvereva-s/goit-js-hm-08/.git"
+    "url": "git+https://github.com/zvereva-s/goit-js-hw-08/.git"
   },
   "keywords": [],
   "author": "Sophia Zvereva",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zvereva-s/goit-js-hm-08//issues"
+    "url": "https://github.com/zvereva-s/goit-js-hw-08//issues"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.5",
