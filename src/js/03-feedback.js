@@ -38,5 +38,5 @@ function onFeedbackFormSubmit(e) {
     e.currentTarget.reset();
 };
 
-feedbackForm.addEventListener('change', onFeedbackFormChange);
-feedbackForm.addEventListener('submit', throttle(onFeedbackFormSubmit, 500))
+feedbackForm.addEventListener('change', throttle(onFeedbackFormChange),500);
+feedbackForm.addEventListener('submit', onFeedbackFormSubmit)
