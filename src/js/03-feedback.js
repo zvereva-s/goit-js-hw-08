@@ -6,6 +6,7 @@ const KEY_NAME = 'feedback-form-state';
 const feedbackForm = document.querySelector('.feedback-form');
 const feedbackFormData = {};
 
+
 function fillFeedbackFrom(form) { 
     const formDataFromLclStrg = lclStrgApi.load(KEY_NAME);
     const formFeedbackElements = form.elements;
@@ -27,15 +28,21 @@ function onFeedbackFormChange(e){
     feedbackFormData[feedbackFormName] = feedbackFormValue;
 
     lclStrgApi.save(KEY_NAME, feedbackFormData);
+
 }
 
 function onFeedbackFormSubmit(e) {
     e.preventDefault();
+    const { email, message } = feedbackForm.elements;
+    const inputsObj = {
+        email: email.value, 
+        message: message.value,
+    };
+    console.log(inputsObj);
 
-    console.log(lclStrgApi.load(KEY_NAME));
-    
     lclStrgApi.remove(KEY_NAME);
     e.currentTarget.reset();
+
 };
 
 feedbackForm.addEventListener('change', throttle(onFeedbackFormChange),500);
