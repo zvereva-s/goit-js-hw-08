@@ -30,3 +30,4 @@ import throttle from 'lodash.throttle';
     });
 
     player.on('timeupdate', throttle(onCurrentTime, 1000));
+

@@ -4,7 +4,7 @@ import lclStrgApi from "./storage";
     
 const KEY_NAME = 'feedback-form-state'; 
 const feedbackForm = document.querySelector('.feedback-form');
-const feedbackFormData = {};
+let feedbackFormData = {};
 
 
 function fillFeedbackFrom(form) { 
@@ -33,15 +33,13 @@ function onFeedbackFormChange(e){
 
 function onFeedbackFormSubmit(e) {
     e.preventDefault();
-    const { email, message } = feedbackForm.elements;
-    const inputsObj = {
-        email: email.value, 
-        message: message.value,
-    };
-    console.log(inputsObj);
+
+    console.log(lclStrgApi.load(KEY_NAME));
 
     lclStrgApi.remove(KEY_NAME);
     e.currentTarget.reset();
+
+    feedbackFormData = {};
 
 };
 
