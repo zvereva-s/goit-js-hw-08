@@ -43,5 +43,5 @@ function onFeedbackFormSubmit(e) {
 
 };
 
-feedbackForm.addEventListener('change', throttle(onFeedbackFormChange),500);
+feedbackForm.addEventListener('input', throttle(onFeedbackFormChange),500);
 feedbackForm.addEventListener('submit', onFeedbackFormSubmit)
